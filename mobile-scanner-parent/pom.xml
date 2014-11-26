@@ -18,6 +18,7 @@
     <module>mobile-scanner-repository</module>
     <module>mobile-scanner-service</module>
     <module>mobile-scanner-server</module>
+    <module>mobile-scanner-admin</module>
   </modules>
 
   <build>

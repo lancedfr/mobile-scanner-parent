@@ -22,3 +22,5 @@ mobile-scanner-parent/mobile-scanner-server/target
 mobile-scanner-parent/mobile-scanner-service/target
 mobile-scanner-parent/target
 .idea
+
+mobile-scanner-parent/mobile-scanner-admin/mobile-scanner-admin.iml
