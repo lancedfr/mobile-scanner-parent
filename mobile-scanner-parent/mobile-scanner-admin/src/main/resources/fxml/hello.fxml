@@ -1,21 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.*?>
-<?import org.tbee.javafx.scene.layout.fxml.*?>
-<MigPane xmlns:fx="http://javafx.com/fxml" id="rootPane"
-         fx:controller="za.ac.cput.HelloController"
-         styleClass="main-panel"
-         layout="insets 20"
-         cols="[label, pref!][grow, 50::]"
-         rows="">
-
-    <Label text="First Name:"/>
-    <TextField fx:id="firstNameField" prefColumnCount="30" MigPane.cc="growx, wrap"/>
-    <Label text="Last Name:"/>
-    <TextField fx:id="lastNameField" prefColumnCount="30" MigPane.cc="growx, wrap"/>
-
-    <Button text="Say Hello" onAction="#sayHello" MigPane.cc="skip, gap :push, gaptop 15, wrap"/>
-
-    <Label fx:id="messageLabel" styleClass="hello-message" MigPane.cc="span, growx, gaptop 15"/>
-
-</MigPane>
+<?import javafx.scene.layout.Pane?>
+<Pane xmlns:fx="http://javafx.com/fxml/1" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+      minWidth="-Infinity" prefHeight="159.0" prefWidth="323.0" styleClass="main-panel"
+      xmlns="http://javafx.com/javafx/8" fx:controller="za.ac.cput.HelloController">
+    <Label layoutX="58.0" layoutY="33.0" text="First Name:"/>
+    <TextField fx:id="firstNameField" layoutX="126.0" layoutY="33.0"/>
+    <Label layoutX="58.0" layoutY="57.0" text="Last Name:"/>
+    <TextField fx:id="lastNameField" layoutX="126.0" layoutY="57.0"/>
+    <Button layoutX="211.0" layoutY="108.0" mnemonicParsing="false" onAction="#sayHello" text="Say Hello"/>
+    <Label fx:id="messageLabel" layoutX="58.0" layoutY="108.0"/>
+</Pane>
