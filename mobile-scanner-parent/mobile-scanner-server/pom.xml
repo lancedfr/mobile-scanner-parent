@@ -1,4 +1,4 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://maven.apache.org/POM/4.0.0"
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
@@ -15,7 +15,6 @@
 
   <properties>
     <java-version>1.7</java-version>
-    <spring-version>4.0.6.RELEASE</spring-version>
     <org.aspectj-version>1.7.4</org.aspectj-version>
     <org.slf4j-version>1.7.5</org.slf4j-version>
     <jackson.version>2.4.1.1</jackson.version>
@@ -43,7 +42,7 @@
     <dependency>
       <groupId>org.springframework</groupId>
       <artifactId>spring-context</artifactId>
-      <version>${spring-version}</version>
+      <version>${spring.version}</version>
       <exclusions>
         <!-- Exclude Commons Logging in favor of SLF4j -->
         <exclusion>
@@ -55,7 +54,7 @@
     <dependency>
       <groupId>org.springframework</groupId>
       <artifactId>spring-webmvc</artifactId>
-      <version>${spring-version}</version>
+      <version>${spring.version}</version>
     </dependency>
 
     <!-- AspectJ -->
@@ -144,7 +143,7 @@
     <dependency>
       <groupId>org.springframework</groupId>
       <artifactId>spring-test</artifactId>
-      <version>${spring-version}</version>
+      <version>${spring.version}</version>
       <scope>test</scope>
     </dependency>
     <dependency>

@@ -1,4 +1,4 @@
-package za.ac.cput;
+package za.ac.cput.mobile.scanner.admin.controller;
 
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;

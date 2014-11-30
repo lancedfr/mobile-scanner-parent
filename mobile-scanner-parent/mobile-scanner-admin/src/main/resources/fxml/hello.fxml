@@ -4,7 +4,7 @@
 <?import javafx.scene.layout.Pane?>
 <Pane xmlns:fx="http://javafx.com/fxml/1" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
       minWidth="-Infinity" prefHeight="159.0" prefWidth="323.0" styleClass="main-panel"
-      xmlns="http://javafx.com/javafx/8" fx:controller="za.ac.cput.HelloController">
+      xmlns="http://javafx.com/javafx/8" fx:controller="za.ac.cput.mobile.scanner.admin.controller.HelloController">
     <Label layoutX="58.0" layoutY="33.0" text="First Name:"/>
     <TextField fx:id="firstNameField" layoutX="126.0" layoutY="33.0"/>
     <Label layoutX="58.0" layoutY="57.0" text="Last Name:"/>
