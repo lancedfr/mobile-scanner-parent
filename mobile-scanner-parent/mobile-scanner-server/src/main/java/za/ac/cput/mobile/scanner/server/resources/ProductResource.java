@@ -20,27 +20,21 @@
  */
 package za.ac.cput.mobile.scanner.server.resources;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.*;
+import za.ac.cput.mobile.scanner.repository.model.Product;
+import za.ac.cput.mobile.scanner.service.product.ProductService;
+
 import java.math.BigDecimal;
 import java.math.BigInteger;
 import java.util.Date;
 import java.util.List;
 
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.ResponseBody;
-
-import za.ac.cput.mobile.scanner.repository.model.Product;
-import za.ac.cput.mobile.scanner.service.product.ProductService;
-
 /**
- * Handles requests for the Product service.
+ * Handles requests for the Product spring.
  */
 @Controller
 public class ProductResource {
@@ -48,7 +42,9 @@ public class ProductResource {
   /** The Constant LOGGER. */
   private static final Logger LOGGER = LoggerFactory.getLogger(ProductResource.class);
 
-  /** The product service. */
+  /**
+   * The product spring.
+   */
   @Autowired
   private ProductService productService;
 

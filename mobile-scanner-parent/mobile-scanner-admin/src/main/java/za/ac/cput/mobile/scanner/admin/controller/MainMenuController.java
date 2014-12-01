@@ -15,8 +15,6 @@ public class MainMenuController {
     }
 
     public void start(Stage stage) throws Exception {
-        LOGGER.info("Starting add product");
-
         String fxmlFile = "/fxml/addproduct.fxml";
         LOGGER.debug("Loading FXML for add product from: {}", fxmlFile);
         FXMLLoader loader = new FXMLLoader();

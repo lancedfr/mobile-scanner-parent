@@ -1,50 +1,51 @@
 <project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://maven.apache.org/POM/4.0.0"
-  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-  <modelVersion>4.0.0</modelVersion>
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
 
-  <groupId>za.ac.cput</groupId>
-  <artifactId>mobile-scanner-parent</artifactId>
-  <version>1.0-SNAPSHOT</version>
-  <packaging>pom</packaging>
+    <groupId>za.ac.cput</groupId>
+    <artifactId>mobile-scanner-parent</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <packaging>pom</packaging>
 
-  <name>mobile-scanner-parent</name>
-  <url>http://maven.apache.org</url>
+    <name>mobile-scanner-parent</name>
+    <url>http://maven.apache.org</url>
 
-  <properties>
-    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <spring.version>4.1.2.RELEASE</spring.version>
-  </properties>
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <spring.version>4.1.2.RELEASE</spring.version>
+        <owner.version>1.0.6</owner.version>
+    </properties>
 
-  <modules>
-    <module>mobile-scanner-repository</module>
-    <module>mobile-scanner-service</module>
-    <module>mobile-scanner-server</module>
-    <module>mobile-scanner-admin</module>
-  </modules>
+    <modules>
+        <module>mobile-scanner-repository</module>
+        <module>mobile-scanner-service</module>
+        <module>mobile-scanner-server</module>
+        <module>mobile-scanner-admin</module>
+    </modules>
 
-  <build>
-    <pluginManagement>
-      <plugins>
-        <plugin>
-          <groupId>org.apache.maven.plugins</groupId>
-          <artifactId>maven-compiler-plugin</artifactId>
-          <configuration>
-            <source>1.8</source>
-            <target>1.8</target>
-          </configuration>
-        </plugin>
-      </plugins>
-    </pluginManagement>
-  </build>
+    <build>
+        <pluginManagement>
+            <plugins>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-compiler-plugin</artifactId>
+                    <configuration>
+                        <source>1.8</source>
+                        <target>1.8</target>
+                    </configuration>
+                </plugin>
+            </plugins>
+        </pluginManagement>
+    </build>
 
-  <dependencyManagement>
-    <dependencies>
-      <!-- <dependency> -->
-      <!-- <groupId>junit</groupId> -->
-      <!-- <artifactId>junit</artifactId> -->
-      <!-- <version>4.11</version> -->
-      <!-- <scope>test</scope> -->
-      <!-- </dependency> -->
-    </dependencies>
-  </dependencyManagement>
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>junit</groupId>
+                <artifactId>junit</artifactId>
+                <version>4.11</version>
+                <scope>test</scope>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
 </project>

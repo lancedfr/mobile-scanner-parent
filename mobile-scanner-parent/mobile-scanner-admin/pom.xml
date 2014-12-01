@@ -15,7 +15,7 @@
 
     <packaging>jar</packaging>
     <version>1.0-SNAPSHOT</version>
-    
+
     <organization>
         <!-- Used as the 'Vendor' for JNLP generation -->
         <name>Your Organisation</name>
@@ -54,12 +54,20 @@
 
 
     <dependencies>
+        <!--TODO mobile-scanner-repository is only here for the entity classes and DAO interfaces-->
+        <!--we should move entity classes to its own module-->
         <dependency>
             <groupId>za.ac.cput</groupId>
-            <artifactId>mobile-scanner-service</artifactId>
+            <artifactId>mobile-scanner-repository</artifactId>
             <version>0.0.1-SNAPSHOT</version>
         </dependency>
-    
+
+        <dependency>
+            <groupId>org.apache.httpcomponents</groupId>
+            <artifactId>httpclient</artifactId>
+            <version>4.3.6</version>
+        </dependency>
+
         <!-- MigLayout -->
         <dependency>
             <groupId>com.miglayout</groupId>
@@ -86,6 +94,25 @@
             <groupId>org.springframework</groupId>
             <artifactId>spring-context</artifactId>
             <version>${spring.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.codehaus.jackson</groupId>
+            <artifactId>jackson-mapper-asl</artifactId>
+            <version>1.9.13</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.aeonbits.owner</groupId>
+            <artifactId>owner-java8</artifactId>
+            <version>${owner.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>4.11</version>
+            <scope>test</scope>
         </dependency>
 
     </dependencies>

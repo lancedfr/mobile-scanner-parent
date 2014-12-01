@@ -2,7 +2,7 @@ package za.ac.cput.mobile.scanner.admin.controller;
 
 import javafx.fxml.FXML;
 import javafx.scene.control.TextField;
-import za.ac.cput.mobile.scanner.admin.service.SpringFacade;
+import za.ac.cput.mobile.scanner.admin.config.SpringFacade;
 import za.ac.cput.mobile.scanner.repository.model.Product;
 
 public class AddProductController {
@@ -16,7 +16,7 @@ public class AddProductController {
         Product product = new Product();
         product.setBarcode(productBarcodeField.getText());
         product.setName(productNameField.getText());
-        SpringFacade.getProductService().addProduct(product);
+        SpringFacade.getProductDao().addProduct(product);
     }
 
 }

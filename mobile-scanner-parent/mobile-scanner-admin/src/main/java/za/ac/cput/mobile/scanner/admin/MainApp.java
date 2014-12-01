@@ -7,8 +7,6 @@ import javafx.scene.Scene;
 import javafx.stage.Stage;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.springframework.context.support.ClassPathXmlApplicationContext;
-import za.ac.cput.mobile.scanner.admin.service.SpringFacade;
 
 public class MainApp extends Application {
 
@@ -20,8 +18,6 @@ public class MainApp extends Application {
 
     public void start(Stage stage) throws Exception {
         LOGGER.info("Starting mobile scanner administration");
-        SpringFacade.startSpring();
-
 
         String fxmlFile = "/fxml/mainmenu.fxml";
         LOGGER.debug("Loading FXML for main view from: {}", fxmlFile);
